@@ -1,0 +1,5 @@
+{>layout/}
+
+{<content}
+    <a href="categories">Show forum categories</a>
+{/content}

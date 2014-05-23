@@ -1,0 +1,14 @@
+{>layout/}
+
+{<content}
+
+<h1>{post.title}</h1>
+<p>Created by {post.author} on {post.date}</p>
+
+{#post.threads}
+    <p>{author}</p>
+    <p>{date}</p>
+    <p>{content}</p>
+
+{/post.threads}
+{/content}

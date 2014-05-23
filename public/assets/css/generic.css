@@ -1,0 +1,23 @@
+/* BRANDING */
+::selection {
+    background-color: #fc4c02;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background-color: #fc4c02;
+    color: #fff;
+    text-shadow: none;
+}
+
+a,
+.clickable{
+    color:#007fb6;
+    cursor:pointer;
+    text-decoration:none;
+    transition:color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+    -webkit-transition:color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+    -moz-transition:color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+    -o-transition:color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+    -ms-transition:color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+}

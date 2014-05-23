@@ -1,0 +1,8 @@
+{>layout/}
+
+{<content}
+    {#topics}
+        <h2>{name}</h2>
+        {>categories/}
+    {/topics}
+{/content}

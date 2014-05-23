@@ -1,0 +1,119 @@
+{
+    "topics" : [
+        {
+            "name" : "Challenges",
+            "categories": [
+                {
+                    "name": "Ride Challenge: Gran Fondo 5",
+                    "discussions" : 22,
+                    "comments" : 301,
+                    "latestPost" : {
+                        "title" : "All Fondoed!",
+                        "author" : "John Fondo",
+                        "date" : "May 20, 2014"
+                    }
+                },
+                {
+                    "name": "Run Challenge: Suunto Sisu Challenge",
+                    "discussions" : 18,
+                    "comments" : 217,
+                    "latestPost" : {
+                        "title" : "Such Suunto. Much Sisu. Very Challenge. Wow!",
+                        "author" : "Doge",
+                        "date" : "May 19, 2014"
+                    }
+                },
+                {
+                    "name": "Run Challenge: May MTS",
+                    "discussions" : 102,
+                    "comments" : 542,
+                    "latestPost" : {
+                        "title" : "May the challenge be with you",
+                        "author" : "Alfred Run Pun",
+                        "date" : "May 19, 2014"
+                    }
+                },
+                {
+                    "name": "Ride Challenge: May MTS",
+                    "discussions" : 287,
+                    "comments" : 1201,
+                    "latestPost" : {
+                        "title" : "To chamois or not to chamois",
+                        "author" : "Shake S. Pear",
+                        "date" : "May 19, 2014"
+                    }
+                },
+                {
+                    "name": "Run Challenge: Strava Races 10k",
+                    "discussions" : 401,
+                    "comments" : 985,
+                    "latestPost" : {
+                        "title" : "10k? Ok!",
+                        "author" : "Alfred Run Pun",
+                        "date" : "May 14, 2014"
+                    }
+                },
+                {
+                    "name": "Run Challenge: Strava Races Half Marathon",
+                    "discussions" : 1012,
+                    "comments" : 4501,
+                    "latestPost" : {
+                        "title" : "My knees hurt",
+                        "author" : "Mary Jane",
+                        "date" : "May 19, 2014"
+                    }
+                }
+            ]
+        },
+        {
+            "name" : "Cycling",
+            "categories": [
+                {
+                    "name": "Cycling Racing",
+                    "discussions" : 163,
+                    "comments" : 3951,
+                    "latestPost" : {
+                        "title" : "Learning to love road rash",
+                        "author" : "Skingraft Bob",
+                        "date" : "May 7, 2014"
+                    }
+                },
+                {
+                    "name": "Cycling Gear",
+                    "discussions" : 913,
+                    "comments" : 7104,
+                    "latestPost" : {
+                        "title" : "How light is too light?",
+                        "author" : "Weightweenie Joe",
+                        "date" : "May 19, 2014"
+                    }
+                }
+            ]
+        },
+        {
+            "name" : "Running",
+            "categories": [
+                {
+                    "name": "Running Racing",
+                    "discussions" : 210,
+                    "comments" : 5103,
+                    "latestPost" : {
+                        "title" : "Can you run and smile at the same time?",
+                        "author" : "Frowny Mary",
+                        "date" : "May 20, 2014"
+                    }
+                },
+                {
+                    "name": "Running Gear",
+                    "discussions" : 482,
+                    "comments" : 9102,
+                    "latestPost" : {
+                        "title" : "Go fast short shorts",
+                        "author" : "General Chafer",
+                        "date" : "May 19, 2014"
+                    }
+                }
+            ]
+        }
+    ]
+}

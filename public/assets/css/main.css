@@ -1,0 +1,183 @@
+/* LAYOUT */
+body {
+    background-color: #ccc;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1148px;
+    position: relative;
+}
+
+/* @TODO: REMOVE THESE */
+.inner-wrapper,
+.content {
+    margin: 0 auto;
+    max-width: 1148px;
+}
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: white;
+}
+
+/* HEADER */
+    .header {
+        background-color: #fff;
+    }
+    .logo {
+        float: left;
+        background: url(../img/strava-logo.svg) no-repeat;
+        background-size: cover;
+        height: 24px;
+        width: 114px;
+        margin: 12px 20px 0 0;
+    }
+
+    .navbar {
+        float: left;
+        font-size: 14px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+    }
+
+    .navbar a:link,
+    .navbar a:visited {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .navbar a:hover,
+    .navbar .selected a:hover,
+    .navbar a:focus,
+    .navbar a:active {
+        color: #FC4C02;
+    }
+
+    .navbar .selected {
+        border-bottom: 2px solid #FC4C02;
+
+    }
+    .navbar .selected a {
+        color: #333;
+        font-weight: 500;
+    }
+
+    .usertools {
+        float: right;
+        text-align: right;
+        margin-top: 8px;
+
+    }
+    .usertools li {
+        padding-left: 10px;
+    }
+
+    .avatar {
+        height: 31px;
+        width: 31px;
+    }
+
+/* CONTENT */
+
+.cat-table {
+    width: 100%;
+    /* Use a "fixed" table layout method to speed up rendering time.
+       This method uses the width of the first row of cells to define
+       the rest of the table. */
+    table-layout: fixed;
+}
+.cat-table .cat-table-latest {
+    width: 25%;
+}
+
+@media (max-width: 767px) {
+    .cat-table .cat-table-latest {
+        display: none;
+    }
+}
+
+.item-count {
+    width: 100px;
+    text-align: center;
+}
+
+.paginator {
+    float: right;
+}
+
+/* FOOTER */
+    .footer {
+        background-color: #fff;
+        font-size: 13px;
+        color: #666;
+        padding: 40px 0;
+    }
+    .footer-cols {
+        float: left;
+    }
+    .more-info .footer-cols {
+        width: 25%;
+    }
+    .footer-promo {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    .footer a:link,
+    .footer a:visited {
+        color: #999;
+        text-decoration: none;
+    }
+
+    .footer a:hover,
+    .footer a:focus,
+    .footer a:active {
+        color: #666;
+        text-decoration: underline;
+    }
+
+    .footer-logo {
+        display: block;
+        background: url(../img/strava-logo.svg) no-repeat 0px -50px;
+        background-size: cover;
+        height: 24px;
+        width: 114px;
+    }
+
+    .footer h4 {
+        color: #333;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
+    .footer-cols li {
+        margin: 10px 0;
+    }
+
+    .footer .copyright {
+        margin-top: 10px;
+    }
+    .footer .newsletter {
+        border: 1px solid #E5E5E5;
+        padding: 15px;
+        font-size: 12px;
+    }
+    .footer .newsletter-icon {
+        background-image: url(http://strava.com/assets/website/sprites/sprites-website-00ad301784b10c0c738ef43bef6b1bec.png);
+        background-position: -60px 0px;
+        height: 19px;
+        width: 26px;
+        float: left;
+        margin-right: 10px;
+    }
+    .footer .language-picker {
+        float: right;
+        text-align: right;
+    }

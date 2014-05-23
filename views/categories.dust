@@ -1,0 +1,20 @@
+<table class="cat-table pure-table pure-table-horizontal pure-table-striped">
+    <thead>
+        <tr>
+            <th class="cat-table-category">Category</th>
+            <th class="cat-table-discussions item-count">Discussions</th>
+            <th class="cat-table-comments item-count">Comments</th>
+            <th class="cat-table-latest">Latest Post</th>
+        </tr>
+    </thead>
+    <tbody>
+        {#categories}
+        <tr>
+            <td><a href="posts">{name}</a></td>
+            <td class="cat-table-discussions item-count">{discussions}</td>
+            <td class="cat-table-comments item-count">{comments}</td>
+            <td class="cat-table-latest"><a href="post">{latestPost.title}</a> by <a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
+        </tr>
+        {/categories}
+    </tbody>
+</table>

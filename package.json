@@ -1,0 +1,16 @@
+{
+    "author": "Adriano Castro <ad@adrianocastro.net> (http://adrianocastro.net)",
+    "name": "Strava-Forums",
+    "description": "A working prototype of a forum for Strava.",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "express": "3.x",
+        "dustjs-linkedin": "*",
+        "dustjs-helpers": "*",
+        "klei-dust":"*"
+    }
+}

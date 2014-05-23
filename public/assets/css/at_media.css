@@ -1,0 +1,32 @@
+@media (max-width: 1163px) {
+    .wrapper {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        margin-bottom: 7px;
+    }
+    .navbar {
+        clear: left;
+        float: none;
+    }
+    .navbar li {
+        width: 16.6%;
+        text-align: center;
+    }
+    .more-info {
+        clear: left;
+    }
+    .more-info .footer-cols {
+        width: 25%;
+        margin-top: 30px;
+    }
+    .footer h4 {
+        margin-bottom: 10px;
+    }
+    .footer-promo {
+        margin-right: 20px;
+    }
+}
