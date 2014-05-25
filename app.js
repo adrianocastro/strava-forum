@@ -7,9 +7,10 @@ var express       = require('express')
     , kleiDust    = require('klei-dust');
 
 // Define specific routes
-var categories = require('./routes/categories');
+var topics = require('./routes/topics');
 var posts = require('./routes/posts');
 var post = require('./routes/post');
+
 
 // Create a new Express app
 var app = express();
@@ -47,8 +48,8 @@ app.use(app.router);
 
 // Listen for routes
 app.get('/', routes.index);
-app.get('/categories', categories.list);
-app.get('/posts', posts.list);
+app.get('/forums', topics.list);
+app.get('/topic', posts.list);
 app.get('/post', post.thread);
 
 // Create a server instance and start listening

@@ -2,7 +2,7 @@
     "topics" : [
         {
             "name" : "Challenges",
-            "categories": [
+            "subTopics": [
                 {
                     "name": "Ride Challenge: Gran Fondo 5",
                     "discussions" : 22,
@@ -67,7 +67,7 @@
         },
         {
             "name" : "Cycling",
-            "categories": [
+            "subTopics": [
                 {
                     "name": "Cycling Racing",
                     "discussions" : 163,
@@ -92,7 +92,7 @@
         },
         {
             "name" : "Running",
-            "categories": [
+            "subTopics": [
                 {
                     "name": "Running Racing",
                     "discussions" : 210,

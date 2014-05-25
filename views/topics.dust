@@ -1,8 +1,19 @@
 {>layout/}
 
 {<content}
-    {#topics}
-        <h2>{name}</h2>
-        {>categories/}
-    {/topics}
+    <div class="hero-heading">
+        <span class="heading-icon forum"></span>
+        <h1>{heading}</h1>
+        <p>Join a run or cycling Challenge to stay on top of your game, earn new achievements and see how you stack up.</p>
+    </div>
+    <ul class="cat-filters list-simple list-vertical btn-group bfc">
+        <li><button class="btn btn-secondary btn-xsmall selected">View All</button></li>
+        <li><button class="btn btn-secondary btn-xsmall">Challenges</button></li>
+        <li><button class="btn btn-secondary btn-xsmall">Cycling</button></li>
+        <li><button class="btn btn-secondary btn-xsmall">Run</button></li>
+    </ul>
+{#topics}
+    <h2>{name}</h2>
+    {>subTopics/}
+{/topics}
 {/content}
