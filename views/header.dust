@@ -1,16 +1,16 @@
 <div class="header">
     <div class="wrapper bfc">
         <a href="http://strava.com/" class="logo text-hidden" title="Return to the Strava home page">Strava</a>
-        <ul class="usertools list-simple list-simple-vertical">
-            <li><img class="avatar" alt="Adriano" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg"></li>
-            <li><button class="button button-primary button-small">Upload</button></li>
+        <ul class="usertools list-simple list-vertical">
+            <li class="profile"><img class="avatar" alt="Adriano" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg"><span class="dropdown-icon"></span></li>
+            <li><button class="btn btn-primary btn-small">Upload</button></li>
         </ul>
-        <ul class="navbar bfc list-simple list-simple-vertical">
+        <ul class="navbar list-simple list-vertical">
             <li><a href="http://strava.com/dashboard">Dashboard</a>
             <li><a href="http://strava.com/athlete/training/log">Training</a></li>
             <li><a href="http://strava.com/segments/explore">Explore</a></li>
             <li><a href="http://strava.com/challenges">Challenges</a></li>
-            <li class="selected"><a href="http://strava.com/forums">Forums</a></li>
+            <li class="selected"><a href="/">Forums</a></li>
             <li><a href="http://strava.com/shop?utm_campaign=evergreen&amp;utm_medium=web&amp;utm_source=topnav">Shop</a></li>
         </ul>
     </div>

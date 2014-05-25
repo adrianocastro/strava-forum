@@ -7,7 +7,7 @@
         </div>
 
         <div class="footer-cols language-picker">
-            <button class="button button-secondary button-xsmall">Language</button>
+            <button class="btn btn-secondary btn-xsmall">Language<span class="dropdown-icon"></span></button>
         </div>
 
         <div class="more-info bfc">
@@ -52,7 +52,7 @@
                     <li><a href="http://strava.com/pros">Pros on Strava</a></li>
                     <li><a href="http://strava.com/stand-with-us">Stand With Us</a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </div
 </div>

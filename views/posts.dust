@@ -1,41 +1,26 @@
 {>layout/}
 
 {<content}
-<ul class="pure-paginator paginator">
-    <li><a class="pure-button prev" href="#">&#171;</a></li>
-    <li><a class="pure-button pure-button-active" href="#">1</a></li>
-    <li><a class="pure-button" href="#">2</a></li>
-    <li><a class="pure-button" href="#">3</a></li>
-    <li><a class="pure-button next" href="#">&#187;</a></li>
-</ul>
+<h1>{heading}</h1>
 
-<table class="cat-table pure-table pure-table-horizontal pure-table-striped">
+<table class="cat-table table-simple table-simple-striped fs-xsmall">
     <thead>
         <tr>
-            <th class="cat-table-category">Thread</th>
+            <th class="cat-table-category first-child">Thread</th>
             <th class="cat-table-discussions item-count">Replies</th>
             <th class="cat-table-comments item-count">Views</th>
-            <th class="cat-table-latest">Latest Post</th>
+            <th class="cat-table-latest last-child">Latest Post</th>
         </tr>
     </thead>
     <tbody>
         {#posts}
         <tr>
-            <td><a href="post">{name}</a></td>
-            <td class="cat-table-discussions item-count">{replies}</td>
-            <td class="cat-table-comments item-count">{views}</td>
+            <td class="cat-table-category first-child"><a href="posts"><a href="post">{name}</a></td>
+            <td class="cat-table-discussions item-count txt-secondary">{replies}</td>
+            <td class="cat-table-comments item-count txt-secondary">{views}</td>
             <td class="cat-table-latest"><a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
         </tr>
         {/posts}
     </tbody>
 </table>
-
-<ul class="pure-paginator paginator">
-    <li><a class="pure-button prev" href="#">&#171;</a></li>
-    <li><a class="pure-button pure-button-active" href="#">1</a></li>
-    <li><a class="pure-button" href="#">2</a></li>
-    <li><a class="pure-button" href="#">3</a></li>
-    <li><a class="pure-button next" href="#">&#187;</a></li>
-</ul>
-
 {/content}

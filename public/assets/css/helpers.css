@@ -32,6 +32,90 @@ Used for:
     margin: 0;
     padding: 0;
 }
-.list-simple-vertical li {
+.list-vertical li {
     float: left;
+}
+
+.list-vertical a {
+    display: block;
+    padding: 8px 15px;
+    border-top: 2px solid transparent;
+}
+
+.list-vertical a:link,
+.list-vertical a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+.list-vertical a:hover,
+.list-vertical .selected a:hover,
+.list-vertical a:focus,
+.list-vertical a:active {
+    color: #333;
+    background-color: #FFF;
+}
+
+.list-vertical .selected a {
+    border-top: 2px solid #FC4C02;
+    background: #FFF;
+}
+
+.tabbar {
+    background: #F5F5F5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f5f5f5));
+    background: -moz-linear-gradient(top, #f7f7f7, #f5f5f5);
+    background: -o-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f5f5f5));
+    background: -ms-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f5f5f5));
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+
+.tabbar li {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ddd;
+}
+.tabbar .selected {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin-left: -1px;
+}
+
+.table-simple {
+    border-spacing: 0;
+    empty-cells: show;
+    text-align: left;
+}
+.table-simple thead {
+    background-color: rgba(0,0,0,0.02);
+}
+.table-simple th {
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+.table-simple th.first-child {
+    border-left: 1px solid #D9D9D9;
+}
+.table-simple th.last-child {
+    border-right: 1px solid #D9D9D9;
+}
+.table-simple td {
+    background-color: transparent;
+    border-bottom: 1px solid #EBEBEB;
+    border-right: 1px solid #EEE;
+    padding: 10px;
+}
+.table-simple td.first-child {
+    border-left: 1px solid #E7E7E7;
+}
+.table-simple td.last-child {
+    border-right: 1px solid #E7E7E7;
+}
+
+.table-simple-striped tr:nth-child(even) {
+    background-color: rgba(0,0,0,0.02);
 }

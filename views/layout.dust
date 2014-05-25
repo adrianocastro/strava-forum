@@ -9,8 +9,7 @@
 
         document.documentElement.className += ' jsenabled';
     </script>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
-    <link rel="stylesheet" href="/assets/css/generic.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/helpers.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -19,11 +18,17 @@
 <body>
     {>header/}
 
-    <div class="content bfc">
-        <h1>{heading}</h1>
-        {+content}
-            Base content placeholder
-        {/content}
+    <div class="content">
+        <div class="wrapper bfc">
+            <ul class="tabbar bfc list-simple list-vertical">
+               <li class="selected"><a href="/">Forums</a></li>
+            </ul>
+            <div class="content-body">
+                {+content}
+                    Base content placeholder
+                {/content}
+            </div>
+        </div>
     </div>
 
     {>footer/}
