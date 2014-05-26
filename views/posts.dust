@@ -16,8 +16,8 @@
         {#posts}
         <tr>
             <td class="cat-table-category first-child"><a href="posts"><a href="post">{name}</a></td>
-            <td class="cat-table-discussions item-count txt-secondary">{replies}</td>
-            <td class="cat-table-comments item-count txt-secondary">{views}</td>
+            <td class="cat-table-discussions item-count">{replies}</td>
+            <td class="cat-table-comments item-count">{views}</td>
             <td class="cat-table-latest"><a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
         </tr>
         {/posts}

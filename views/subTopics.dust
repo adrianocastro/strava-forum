@@ -1,7 +1,7 @@
 <table class="cat-table table-simple table-simple-striped fs-xsmall">
-    <thead class="hidden">
+    <thead>
         <tr>
-            <th class="cat-table-category first-child">Category</th>
+            <th class="cat-table-category first-child">Topics</th>
             <th class="cat-table-discussions item-count">Discussions</th>
             <th class="cat-table-comments item-count">Comments</th>
             <th class="cat-table-latest last-child">Latest Post</th>
@@ -11,8 +11,8 @@
         {#subTopics}
         <tr>
             <td class="cat-table-category first-child"><a href="topic">{name}</a></td>
-            <td class="cat-table-discussions item-count txt-secondary">{discussions} posts</td>
-            <td class="cat-table-comments item-count txt-secondary">{comments} replies</td>
+            <td class="cat-table-discussions item-count">{discussions}</td>
+            <td class="cat-table-comments item-count">{comments}</td>
             <td class="cat-table-latest last-child"><a href="post">{latestPost.title}</a> by <a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
         </tr>
         {/subTopics}

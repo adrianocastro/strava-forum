@@ -12,22 +12,13 @@
 .content .wrapper {
     background-color: #FFF;
 }
-.content .wrapper h1 {
-    /*padding: 20px 0;*/
+.content h1 {
+    margin: 20px;
 }
 
-.content .wrapper h2 {
-    margin: 0 20px;
-}
 .content h2 {
-    border: 1px solid #D9D9D9;
-    margin: 0;
-    padding: 10px 0 10px 10px;
-    background: #ebebeb;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ebebeb));
-    background: -moz-linear-gradient(top, #fcfcfc, #ebebeb);
-    background: -o-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ebebeb));
-    background: -ms-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ebebeb));
+    margin: 0 20px;
+    padding: 10px 0;
 }
 .content-body {
     border: 1px solid #ccc;
@@ -81,7 +72,7 @@
     .profile {
         margin-right: 15px;
     }
-    .avatar {
+    .profile .avatar {
         height: 35px;
         width: 35px;
     }
@@ -92,7 +83,7 @@
     width: 100%;
     border-collapse: separate;
     margin-bottom: 30px;
-    padding: 0 20px;
+    margin-top: 5px;
 }
 .cat-table .cat-table-latest {
     width: 25%;
@@ -101,15 +92,14 @@
     margin-bottom: 20px;
     padding: 15px 20px;
     background: #F5F5F5;
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #D7D7D7;
 }
 
 .hero-heading {
     height: 163px;
     margin-top: 17px;
     text-align: center;
-    border-bottom: 1px solid #e6e6e6;
 }
 
 .hero-heading h1 {
@@ -146,8 +136,79 @@
     text-align: center;
 }
 
-.paginator {
+.thread-content {
+    float: left;
+    width: 70%;
+    border-right: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.thread-aside {
+    float: left;
+    width: 30%;
+    margin-left: -1px;
+}
+.thread-title h1 {
+    margin: 0;
+}
+.thread-title {
+    margin: 20px;
+}
+.thread-list {
+    margin: 0 20px;
+}
+
+.post:first-child {
+    border-top: 1px solid #F5F5F5;
+}
+.post {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px 20px 20px 70px;
+}
+.post-header .post-avatar {
+    float: left;
+    margin-left: -70px;
+}
+
+.post-header .post-date {
+    display: block;
+}
+.post-header .post-number,
+.post-controls {
     float: right;
+}
+
+.post-content {
+    margin-bottom: 20px;
+}
+
+.thread-comment {
+    margin: 20px;
+}
+.thread-comment h2 {
+    margin: 0;
+    padding-top: 0;
+}
+.thread-comment textarea {
+    width: 91%;
+    height: 56px;
+    resize: vertical;
+    border: 1px solid #CCC;
+}
+
+.comment-avatar {
+    float: left;
+}
+
+.comment-submit {
+    float: right;
+}
+
+.kudo-cta {
+    display: inline-block;
+    background-image: url(http://d3nn82uaxijpm6.cloudfront.net/assets/sprites/sprites-application-05b3298bea322fe929dadee0fb45a883.png);
+    height: 13px;
+    width: 16px;
+    background-position: -229px 0;
 }
 
 /* FOOTER */
@@ -204,7 +265,7 @@
     }
     .footer .newsletter {
         border: 1px solid #E5E5E5;
-        padding: 15px;
+        padding: 15px 20px;
         font-size: 12px;
     }
     .footer .newsletter-icon {
@@ -218,4 +279,7 @@
     .footer .language-picker {
         float: right;
         text-align: right;
+    }
+    .footer .language-picker .dropdown-icon {
+        height: 7px;
     }

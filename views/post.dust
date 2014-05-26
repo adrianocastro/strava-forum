@@ -2,13 +2,62 @@
 
 {<content}
 
-<h1>{post.title}</h1>
-<p>Created by {post.author} on {post.date}</p>
-
-{#post.threads}
-    <p>{author}</p>
-    <p>{date}</p>
-    <p>{content}</p>
-
-{/post.threads}
+<div class="thread-content">
+    <p>Forums &gt; Cycling Gear</p>
+    <div class="thread-title bfc">
+        <h1>{post.title}</h1>
+        <div class="thread-controls bfc">
+            <button class="btn btn-secondary btn-xsmall">Give Kudos</button>
+            <button class="btn btn-secondary btn-xsmall">
+                <span class="kudo-cta text-hidden">Kudo</span>
+                <span class="kudo-count">10</span>
+            </button>
+            <a href="#comment" class="btn btn-primary btn-xsmall">Comment</a>
+        </div>
+    </div>
+    <ul class="list-simple thread-list">
+    {#post.threads}
+        <li class="post bfc">
+            <div class="post-header">
+                <a href="http://strava.com/athletes/151849">
+                    <img class="post-avatar" src="{avatarImg}" alt="">
+                    <span class="post-author">{author}</span>
+                </a>
+                <a href="#postNumber" class="post-number txt-secondary fs-xsmall">#{postNumber}</a>
+                <a href="#postNumber" class="post-date txt-secondary fs-xsmall">{date}</a>
+            </div>
+            <div class="post-content fs-xsmall">
+                <p>{content|s}</p>
+            </div>
+            <div class="post-controls bfc">
+                <button class="btn btn-secondary btn-xsmall">Give Kudos</button>
+                <button class="btn btn-secondary btn-xsmall">
+                    <span class="kudo-cta text-hidden">Kudo</span>
+                    <span class="kudo-count">10</span>
+                </button>
+            </div>
+        </li>
+    {/post.threads}
+    </ul>
+    <form class="thread-comment bfc"action="#" method="get" id="comment">
+        <h2>New comment</h2>
+        <a class="comment-avatar" href="http://strava.com/athletes/151849"><img alt="Adriano Castro" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg"></a>
+        <textarea class="fs-xsmall" placeholder="Add a comment"></textarea>
+        <button type="submit" class="comment-submit btn btn-primary btn-xsmall">Submit</button>
+    </form>
+</div>
+<div class="thread-aside">
+    <h2>About this thread</h2>
+    <ul class="list-simple">
+        <li>Started on {post.date} by {post.author}</li>
+        <li>22 participants</li>
+        <li>Latest reply by {post.latestReplyAuthor}</li>
+    </ul>
+    <h2>Related threads</h2>
+    <ul class="list-simple">
+        <li>Drivetrain is a mess</li>
+        <li>Best dry lube for dusty/sandy conditions</li>
+        <li>How many miles before you replace your chain?</li>
+    </ul>
+</div>
 {/content}

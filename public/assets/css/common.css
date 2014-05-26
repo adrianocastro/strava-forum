@@ -54,6 +54,7 @@ h2,
 h3,
 h4,
 button,
+a,
 .navbar {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -110,6 +111,9 @@ h6 {
     background-color: #e34402;
     border-color: #e34402;
 }
+a.btn-primary:hover {
+    text-decoration: none;
+}
 
 .btn-secondary {
     background-color: #FFF;
@@ -151,6 +155,9 @@ h6 {
 
 .btn-xsmall {
     padding: 5px 15px;
+}
+a.btn-xsmall {
+    padding: 7px 15px;
 }
 
 .fs-xxlarge {
