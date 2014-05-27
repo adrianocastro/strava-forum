@@ -201,6 +201,27 @@
     margin-bottom: 20px;
 }
 
+.post-content .full-width {
+    width: 100%;
+}
+.post-content blockquote {
+    margin: 0 0 10px 0;
+    padding: 15px 20px;
+    background: #F5F5F5;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.post-content blockquote:before {
+    color: #CCC;
+    content: open-quote;
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 0;
+    margin: 0 5px 0 -16px;
+    vertical-align: -3.5rem;
+}
+
+
 .thread-comment {
     margin: 20px;
 }
