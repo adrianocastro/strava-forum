@@ -205,22 +205,31 @@
     width: 100%;
 }
 .post-content blockquote {
+    position: relative;
     margin: 0 0 10px 0;
-    padding: 15px 20px;
+    padding: 15px 20px 15px 40px;
     background: #F5F5F5;
     quotes: "\201C""\201D""\2018""\2019";
+    border-left: 4px solid #CCC;
 }
 
-.post-content blockquote:before {
-    color: #CCC;
-    content: open-quote;
-    font-size: 6em;
+.post-content blockquote:before,
+.post-content blockquote:after {
+    font-size: 5em;
     font-weight: bold;
-    line-height: 0;
-    margin: 0 5px 0 -16px;
-    vertical-align: -3.5rem;
+    color: #CCC;
+    position: absolute;
+    top: 0;
+    line-height: 1;
 }
-
+.post-content blockquote:before {
+    left: 7px;
+    content: open-quote;
+}
+.post-content blockquote:after {
+    right: 7px;
+    content: close-quote;
+}
 
 .thread-comment {
     margin: 20px;
