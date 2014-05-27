@@ -20,7 +20,7 @@
         <li class="post bfc" id="post_{postNumber}">
             <div class="post-header">
                 <a href="http://strava.com/athletes/151849">
-                    <img class="post-avatar" src="{avatarImg}" alt="">
+                    <img class="post-avatar" src="{avatarImg}" alt="" width="60" height="60">
                     <span class="post-author fs-small">{author}</span>
                 </a>
                 <a href="#post_{postNumber}" class="post-number txt-secondary fs-xsmall">#{postNumber}</a>
@@ -41,7 +41,7 @@
     </ul>
     <form class="thread-comment bfc"action="#" method="get" id="comment">
         <h2>New comment</h2>
-        <a class="comment-avatar" href="http://strava.com/athletes/151849"><img alt="Adriano Castro" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg" width="62" height="62"></a>
+        <a class="comment-avatar" href="http://strava.com/athletes/151849"><img alt="Adriano Castro" src="/assets/img/avatar_self_medium.jpg" width="60" height="60"></a>
         <div class="textarea-wrapper">
             <textarea class="fs-xsmall" placeholder="Add a comment"></textarea>
         </div>

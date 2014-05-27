@@ -2,7 +2,7 @@
     <div class="wrapper bfc">
         <a href="http://strava.com/" class="logo text-hidden" title="Return to the Strava home page">Strava</a>
         <ul class="usertools list-simple list-vertical">
-            <li class="profile"><img class="avatar" alt="Adriano" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg"><span class="dropdown-icon"></span></li>
+            <li class="profile"><img class="avatar" alt="Adriano Castro" src="/assets/img/avatar_self_medium.jpg" width="62" height="62"><span class="dropdown-icon"></span></li>
             <li><button class="btn btn-primary btn-small">Upload</button></li>
         </ul>
         <ul class="navbar bfc list-simple list-vertical fs-small">

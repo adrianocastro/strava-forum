@@ -34,7 +34,7 @@
     }
     .logo {
         float: left;
-        background: url(../img/strava-logo.svg) no-repeat;
+        background: url(../img/logo.svg) no-repeat;
         background-size: cover;
         height: 24px;
         width: 114px;
@@ -123,7 +123,7 @@
     width: 49px;
     height: 48px;
     margin: 0 auto;
-    background: url(../img/strava-sprite.png) no-repeat center top;
+    background: url(../img/sprite_navbar_icons.png) no-repeat center top;
 }
 .heading-icon.forum {
     background-position: -331px 0px;
@@ -240,7 +240,7 @@
 }
 .textarea-wrapper {
     /* margin-left = avatar width + 10px margin */
-    margin-left: 72px;
+    margin-left: 70px;
     margin-bottom: 10px;
 }
 .thread-comment textarea {
@@ -263,7 +263,7 @@
     display: inline-block;
     *display: inline;
     zoom: 1;
-    background-image: url(http://d3nn82uaxijpm6.cloudfront.net/assets/sprites/sprites-application-05b3298bea322fe929dadee0fb45a883.png);
+    background-image: url(../img/sprite_full.png);
     height: 13px;
     width: 16px;
     background-position: -229px 0;
@@ -301,7 +301,7 @@
 
     .footer-logo {
         display: block;
-        background: url(../img/strava-logo.svg) no-repeat 0px -50px;
+        background: url(../img/logo.svg) no-repeat 0px -50px;
         background-size: cover;
         height: 24px;
         width: 114px;
@@ -324,7 +324,7 @@
         padding: 15px 20px;
     }
     .footer .newsletter-icon {
-        background-image: url(http://strava.com/assets/website/sprites/sprites-website-00ad301784b10c0c738ef43bef6b1bec.png);
+        background-image: url(../img/sprite_other.png);
         background-position: -60px 0px;
         height: 19px;
         width: 26px;
