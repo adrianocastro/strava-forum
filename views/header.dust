@@ -5,7 +5,7 @@
             <li class="profile"><img class="avatar" alt="Adriano" src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/337699/83553/2/medium.jpg"><span class="dropdown-icon"></span></li>
             <li><button class="btn btn-primary btn-small">Upload</button></li>
         </ul>
-        <ul class="navbar list-simple list-vertical">
+        <ul class="navbar bfc list-simple list-vertical">
             <li><a href="http://strava.com/dashboard">Dashboard</a>
             <li><a href="http://strava.com/athlete/training/log">Training</a></li>
             <li><a href="http://strava.com/segments/explore">Explore</a></li>

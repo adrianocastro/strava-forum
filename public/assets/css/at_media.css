@@ -9,8 +9,8 @@
         margin-bottom: 7px;
     }
     .navbar {
+        width: 100%;
         clear: left;
-        float: none;
     }
     .navbar li {
         width: 16.6%;

@@ -41,6 +41,10 @@
         margin: 12px 20px 0 0;
     }
 
+    .navbar {
+        /* Used to force navbar below the floats around it */
+        min-width: 501px;
+    }
     .navbar a {
         padding: 15px;
     }
