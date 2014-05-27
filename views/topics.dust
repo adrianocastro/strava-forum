@@ -4,7 +4,7 @@
     <div class="hero-heading">
         <span class="heading-icon forum"></span>
         <h1>{heading}</h1>
-        <p>Join the discussion. Discuss your favorite topics, share some advice and stay up to date with the community.</p>
+        <p class="fs-medium">Join the discussion. Discuss your favorite topics, share some advice and stay up to date with the community.</p>
     </div>
     <ul class="cat-filters list-simple list-vertical btn-group bfc">
         <li><button class="btn btn-secondary btn-xsmall selected">View All</button></li>

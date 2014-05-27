@@ -2,8 +2,8 @@
     <div class="wrapper bfc">
         <div class="footer-cols footer-promo">
             <a href="http://strava.com/" class="footer-logo text-hidden bw" title="Return to the Strava home page">Strava — Built for Athletes</a>
-            <p class="copyright">©2014 Strava, Inc. All rights reserved.</p>
-            <p class="newsletter"><span class="newsletter-icon"></span><a href="http://news.strava.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGiSozf7rCHKdWzeYza4mvRze7JejzaRVXMtX%3DWQpglLjHJlYQGtFnreFzc5lDirSNUvB2Ah6PeNn&amp;_ei_=EuI0cB4lm_XSkQyq89oBRyQ" target="_blank">Sign up for our newsletter and get the latest from Strava.</a></p>
+            <p class="copyright fs-xsmall">©2014 Strava, Inc. All rights reserved.</p>
+            <p class="newsletter fs-xsmall"><span class="newsletter-icon"></span><a href="http://news.strava.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGiSozf7rCHKdWzeYza4mvRze7JejzaRVXMtX%3DWQpglLjHJlYQGtFnreFzc5lDirSNUvB2Ah6PeNn&amp;_ei_=EuI0cB4lm_XSkQyq89oBRyQ" target="_blank">Sign up for our newsletter and get the latest from Strava.</a></p>
         </div>
 
         <div class="footer-cols language-picker">
@@ -12,8 +12,8 @@
 
         <div class="more-info bfc">
             <div class="footer-cols">
-                <h4>About</h4>
-                <ul class="list-simple">
+                <h4 class="fs-large">About</h4>
+                <ul class="list-simple fs-xsmall">
                     <li><a href="http://strava.com/about">About</a></li>
                     <li><a href="http://strava.com/how-it-works">How It Works</a></li>
                     <li><a href="http://strava.com/features">Features</a></li>
@@ -26,8 +26,8 @@
             </div>
 
             <div class="footer-cols">
-                <h4>Follow</h4>
-                <ul class="list-simple">
+                <h4 class="fs-large">Follow</h4>
+                <ul class="list-simple fs-xsmall">
                     <li><a href="http://www.facebook.com/StravaRun" target="_blank">Facebook – Run</a></li>
                     <li><a href="http://www.facebook.com/Strava" target="_blank">Facebook – Cycling</a></li>
                     <li><a href="http://twitter.com/strava" target="_blank">Twitter</a></li>
@@ -37,15 +37,15 @@
             </div>
 
             <div class="footer-cols">
-                <h4>Help</h4>
-                <ul class="list-simple">
+                <h4 class="fs-large">Help</h4>
+                <ul class="list-simple fs-xsmall">
                     <li><a href="https://strava.zendesk.com/home">Support</a></li>
                 </ul>
             </div>
 
             <div class="footer-cols">
-                <h4>More</h4>
-                <ul class="list-simple">
+                <h4 class="fs-large">More</h4>
+                <ul class="list-simple fs-xsmall">
                     <li><a href="http://strava.com/shop" class="js-content-shop">Strava Store</a></li>
                     <li><a href="http://blog.strava.com/careers">Careers</a></li>
                     <li><a href="http://strava.com/developers">Developers</a></li>

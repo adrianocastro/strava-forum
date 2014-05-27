@@ -21,8 +21,8 @@
 
     <div class="content">
         <div class="wrapper bfc">
-            <ul class="tabbar bfc list-simple list-vertical">
-               <li class="selected"><a href="/">Forums</a></li>
+            <ul class="tabbar bfc list-simple list-vertical fs-small">
+               <li class="selected"><a href="/forums">Forums</a></li>
             </ul>
             <div class="content-body bfc">
                 {+content}
