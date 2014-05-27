@@ -1,30 +1,52 @@
 html {
-    font-size: 62.5%;
-}
+    /** Use rem sizing (instead of em so not to worry about compouding)
+        for supporting browsers and fallback with pixels.
 
-body,
-button,
-input,
-select,
-textarea {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        Simplify calculation between rems and pixels by setting the root
+        element's font-size to 62.5%.
+
+        This makes 1 rem equal to 10% of the pixel values, e.g.:
+            font-size: 15px;
+            font-size: 1.5rem;
+
+     */
+    font-size: 62.5%;
+    /* Set height to 100% on html and body to allow styling of containers with a 100% height. */
+    height: 100%;
+    /* Set overflow-y to scroll to always show a gutter for the scollbar in all browsers regardless of content. */
+    overflow-y: scroll;
 }
 
 body {
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /** Normally the font-sizing would be done in rems but there's
+        a know issue on Chrome [1, 2] that messes up rem calculations
+        for the whole page. There's a fix [3] from Jan 2014 ready but,
+        a the time of writing, the latest version of Chrome (v35) is
+        still broken.
+
+        The workaround is to use an em based value which should be
+        fine given the normal compounding issue won't be a problem
+        since it's the body element.
+
+
+    1. https://code.google.com/p/chromium/issues/detail?id=319623
+    2. https://code.google.com/p/chromium/issues/detail?id=320754
+    3. https://codereview.chromium.org/147903002/
+    */
+    font-size: 1.4em;
     color: #333;
-    background-color: #EEE;
-    font-size: 14px;
-    line-height: 1.4;
+    background: #EEE;
 }
 
 /* BRANDING */
 ::selection {
-    background-color: #fc4c02;
+    background-color: #FC4C02;
     color: #fff;
     text-shadow: none;
 }
 ::-moz-selection {
-    background-color: #fc4c02;
+    background-color: #FC4C02;
     color: #fff;
     text-shadow: none;
 }
@@ -32,61 +54,124 @@ body {
 a {
     color: #007fb6;
     cursor: pointer;
-    text-decoration: none;
-    -webkit-transition: color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
-    -moz-transition: color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
-    -o-transition: color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
-    -ms-transition: color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+    /* Simplified transition rule for all new browsers (IE10+, Safari 6+, Chrome 26, Firefox 16)
+       - see http://caniuse.com/css-transitions
+    */
     transition: color 0.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
 }
 
-a:hover,
-a:active {
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 a:focus,
 button:focus {
+    /* Address outline inconsistency between Chrome and other browsers. */
     outline: #333 thin dotted;
+}
+
+a:active {
+    /* Avoid the sticky outline when a user clicks on a link,
+       but chooses to not follow it. */
+    outline: none;
 }
 
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 button,
-a,
-.navbar {
+.navbar,
+.tabbar {
+    /* Handpick key elements to apply font-smoothing to.
+       Mostly leave font smoothing to the operating system
+       and especially leave it untouched for large sections
+       of text so not to mess up readability.
+    */
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Emphasizes legibility over rendering speed and geometric precision */
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
+    /* Make sure that browsers that don't support 200 do not fallback to bold
+     * Chrome, Safari & Firefox on Win/Linux only.
+     */
+    font-weight: normal;
+    font-weight: 200;
 }
 
 h1 {
     font-weight: 300;
     font-size: 30px;
+    font-size: 3.0rem;
     letter-spacing: -0.01em;
 }
 
 h2 {
     font-weight: 300;
     font-size: 24px;
+    font-size: 2.4rem;
 }
 h3 {
     font-size: 18px;
+    font-size: 1.8rem;
 }
 h4 {
     font-size: 16px;
+    font-size: 1.6rem;
 }
 h5 {
     font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 h6 {
     font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* @TODO: investigation IE6/7 impact and degradation */
+input,
+select,
+textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea {
+    resize: vertical;
+    /* Remove default vertical scrollbar in IE 8/9. */
+    overflow: auto;
+    /* Improve readability and alignment in all browsers. */
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid #CCC;
+}
+textarea:focus {
+    border: 1px solid #FC4C02;
+    outline: none;
 }
 
 .txt-secondary {
@@ -99,6 +184,15 @@ h6 {
     padding: 10px 25px;
     border: none;
     background: none;
+    /* Simplified transition rule for all new browsers (IE10+, Safari 6+, Chrome 26, Firefox 16)
+       - see http://caniuse.com/css-transitions
+    */
+    transition: color 3.075s linear,border 0.1s linear,box-shadow 0.1s linear,background-color 0.1s linear,opacity 0.1s linear;
+}
+a.btn {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
 }
 
 .btn-primary {
@@ -108,32 +202,31 @@ h6 {
 }
 
 .btn-primary:hover {
-    background-color: #e34402;
-    border-color: #e34402;
-}
-a.btn-primary:hover {
+    background-color: #E34402;
+    border-color: #E34402;
     text-decoration: none;
 }
-
 .btn-secondary {
     background-color: #FFF;
     border: 1px solid #CCC;
 }
 .btn-secondary:hover {
     background-color: rgba(0,0,0,0.05);
+    text-decoration: none;
 }
 
 .btn-secondary.selected {
     background: #333;
     border-color: #999;
-    color: #fff !important;
+    color: #FFF;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* Plain background fallback for older browsers */
     background: #777;
-    background: -moz-linear-gradient(top,  #666,  #777);
-    background: -webkit-gradient(linear,  left top,  left bottom,  from(#666),  to(#777));
-    background: -o-gradient(linear,  left top,  left bottom,  from(#666),  to(#777));
-    background: -ms-gradient(linear,  left top,  left bottom,  from(#666),  to(#777));
+    /* Linear gradient background support of IE 10 and the latest builds of Chrome, Safari and Firefox.
+       - see http://caniuse.com/css-gradients
+    */
+    background: linear-gradient(to bottom, #666, #777);
 }
 
 .btn-group .btn {
@@ -143,6 +236,8 @@ a.btn-primary:hover {
 
 .dropdown-icon {
     display: inline-block;
+    *display: inline;
+    zoom: 1;
     width: 9px;
     height: 19px;
     margin-left: 5px;
@@ -156,30 +251,32 @@ a.btn-primary:hover {
 .btn-xsmall {
     padding: 5px 15px;
 }
-a.btn-xsmall {
-    padding: 7px 15px;
-}
 
 .fs-xxlarge {
     font-size: 30px;
+    font-size: 3.0rem;
 }
 .fs-xlarge {
     font-size: 24px;
+    font-size: 2.4rem;
 }
 .fs-large {
     font-size: 18px;
+    font-size: 1.8rem;
 }
 .btn,
 .fs-medium {
     font-size: 16px;
+    font-size: 1.6rem;
 }
 .btn-small,
 .fs-small {
     font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .btn-xsmall,
 .fs-xsmall {
     font-size: 13px;
+    font-size: 1.3rem;
 }
-

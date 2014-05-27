@@ -16,6 +16,12 @@
         width: 16.6%;
         text-align: center;
     }
+    .cat-table .cat-table-latest {
+        /* @TODO: consider a different approach so to still show this information */
+        position: absolute;
+        top: -999em;
+        left: -999em;
+    }
     .more-info {
         clear: left;
     }
