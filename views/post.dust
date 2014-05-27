@@ -17,14 +17,14 @@
     </div>
     <ul class="list-simple thread-list">
     {#post.threads}
-        <li class="post bfc">
+        <li class="post bfc" id="post_{postNumber}">
             <div class="post-header">
                 <a href="http://strava.com/athletes/151849">
                     <img class="post-avatar" src="{avatarImg}" alt="">
                     <span class="post-author fs-small">{author}</span>
                 </a>
-                <a href="#postNumber" class="post-number txt-secondary fs-xsmall">#{postNumber}</a>
-                <a href="#postNumber" class="post-date txt-secondary fs-xsmall">{date}</a>
+                <a href="#post_{postNumber}" class="post-number txt-secondary fs-xsmall">#{postNumber}</a>
+                <a href="#post_{postNumber}" class="post-date txt-secondary fs-xsmall">{date}</a>
             </div>
             <div class="post-content fs-xsmall">
                 <p>{content|s}</p>
