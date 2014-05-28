@@ -16,7 +16,7 @@
             </div>
             <div class="post-controls bfc">
                 <button class="btn btn-secondary btn-xsmall">Cancel</button>
-                <button class="btn btn-secondary btn-xsmall">Save Draft</button>
+                <button class="btn btn-secondary btn-xsmall">Save<span class="hiddenSmallScreen"> Draft</span></button>
                 <button class="btn btn-secondary btn-xsmall">Preview</button>
                 <button type="submit" class="btn btn-primary btn-xsmall">Submit</button>
             </div>

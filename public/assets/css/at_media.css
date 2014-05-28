@@ -42,15 +42,23 @@
     }
 }
 @media (max-width: 452px) {
+
+    .hiddenSmallScreen {
+        position: absolute!important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px,1px,1px,1px);
+        padding: 0!important;
+        border: 0!important;
+        height: 1px!important;
+        width: 1px!important;
+        overflow: hidden;
+    }
+
     .content .wrapper {
         margin: 0;
     }
     .hero-heading p {
         width: auto;
-    }
-    .footer .language-picker {
-        float: none;
-        text-align: left;
     }
     .cat-filters li {
         width: 33.3%;
@@ -84,7 +92,11 @@
         background: #FC4C02;
         color: #FFF;
     }
-    .profile {
+    .upload {
+        display: none;
+    }
+    .usertools li.profile {
+        padding-left: 0;
         margin-right: 0;
     }
     .hero-heading {
@@ -99,11 +111,76 @@
     .cat-logo {
         float: none;
     }
+    .item-count::after {
+        content: ' ' attr(data-legend);
+    }
+
+    .content-col,
+    .aside-col {
+        float: none;
+        width: auto;
+    }
+
     .content-col {
-        /*width: 100%;*/
+        border: none;
     }
     .aside-col {
+        padding: 0;
+    }
 
+    .topic-list h1 {
+        float: none;
+    }
+
+    .topic-list .comment-cta {
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .post {
+        padding-left: 0;
+    }
+    .post-header .post-avatar {
+        margin: 0 5px 10px 0;
+    }
+    .post-content {
+        margin-top: 10px;
+        clear: left;
+    }
+
+    .list-vertical a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wrapper,
+    .aside-col,
+    .topic-list h1,
+    .breadcrumb,
+    .thread-list,
+    .thread-title,
+    .thread-comment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .comment-avatar {
+        display: none;
+    }
+    .textarea-wrapper {
+        margin-left: 0;
+    }
+
+    .more-info .footer-cols {
+        width: 50%;
+    }
+    .force-drop {
+        clear: left;
+    }
+    .footer .language-picker {
+        float: none;
+        text-align: left;
     }
     .footer-promo {
         width: 100%;

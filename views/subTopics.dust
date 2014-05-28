@@ -24,8 +24,8 @@
                     <a href="/topic" class="fs-medium">{name}<u class="stretch"></u></a>
                 {/type}
             </td>
-            <td class="cat-table-discussions item-count">{discussions}</td>
-            <td class="cat-table-comments item-count">{comments}</td>
+            <td class="cat-table-discussions item-count" data-legend="discussions">{discussions}</td>
+            <td class="cat-table-comments item-count" data-legend="comments">{comments}</td>
             <td class="cat-table-latest last-child"><a href="post">{latestPost.title}</a> by <a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
         </tr>
         {/subTopics}
