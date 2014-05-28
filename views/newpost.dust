@@ -1,0 +1,40 @@
+{>layout/}
+
+{<content}
+
+<div class="content-col newpost">
+    <p class="breadcrumb fs-xsmall"><a href="/topic">Cycling Gear</a> &gt; New Discussion</p>
+    <div class="thread-title bfc">
+        <h1>New Discussion</h1>
+
+        <form class="thread-comment bfc"action="#" method="get" id="comment">
+            <a class="comment-avatar" href="http://strava.com/athletes/151849"><img alt="Adriano Castro" src="/assets/img/avatar_self_medium.jpg" width="60" height="60"></a>
+            <div class="textarea-wrapper">
+                <label for="title" class="hidden">Title</label>
+                <input type="text" id="title" name="Name" value="" maxlength="100" placeholder="Title" class="fs-xsmall">
+                <textarea class="fs-xsmall" placeholder="Comment"></textarea>
+            </div>
+            <div class="post-controls bfc">
+                <button class="btn btn-secondary btn-xsmall">Cancel</button>
+                <button class="btn btn-secondary btn-xsmall">Save Draft</button>
+                <button class="btn btn-secondary btn-xsmall">Preview</button>
+                <button type="submit" class="btn btn-primary btn-xsmall">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="aside-col">
+    <h2>About this thread</h2>
+    <ul class="list-simple fs-xsmall">
+        <li>Started on {post.date} by {post.author}</li>
+        <li>22 participants</li>
+        <li>Latest reply by {post.latestReplyAuthor}</li>
+    </ul>
+    <h2>Related threads</h2>
+    <ul class="list-simple fs-xsmall">
+        <li>Drivetrain is a mess</li>
+        <li>Best dry lube for dusty/sandy conditions</li>
+        <li>How many miles before you replace your chain?</li>
+    </ul>
+</div>
+{/content}

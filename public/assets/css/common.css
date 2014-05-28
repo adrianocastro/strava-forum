@@ -87,6 +87,7 @@ h4,
 h5,
 h6,
 button,
+a.btn,
 .navbar,
 .tabbar {
     /* Handpick key elements to apply font-smoothing to.
@@ -160,16 +161,20 @@ textarea {
     transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 
+textarea,
+input {
+    padding: 5px;
+    border: 1px solid #CCC;
+}
 textarea {
     resize: vertical;
     /* Remove default vertical scrollbar in IE 8/9. */
     overflow: auto;
     /* Improve readability and alignment in all browsers. */
     vertical-align: top;
-    padding: 5px;
-    border: 1px solid #CCC;
 }
-textarea:focus {
+textarea:focus,
+input:focus {
     border: 1px solid #FC4C02;
     outline: none;
 }
@@ -229,6 +234,21 @@ a.btn {
     background: linear-gradient(to bottom, #666, #777);
 }
 
+.btn-secondary.disabled {
+    border: 1px solid #CCC;
+    background: #FFF;
+    color: #CCC;
+    cursor: default;
+}
+
+
+.btn-secondary.active {
+    background-color: #007fb6;
+    border: 1px solid #007fb6;
+    color: #FFF;
+    font-style: italic;
+}
+
 .btn-group .btn {
     min-width: 94px;
     margin-right: -1px;
@@ -279,4 +299,8 @@ a.btn {
 .fs-xsmall {
     font-size: 13px;
     font-size: 1.3rem;
+}
+.fs-xxsmall {
+    font-size: 12px;
+    font-size: 1.2rem;
 }

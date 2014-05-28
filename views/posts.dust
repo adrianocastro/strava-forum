@@ -1,26 +1,61 @@
 {>layout/}
 
 {<content}
-<h1>{heading}</h1>
+<div class="content-col topic-list">
+    <h1>{heading}</h1>
+    <a href="newpost" class="comment-cta btn btn-primary btn-xsmall">Start a new discussion</a>
 
-<table class="cat-table table-simple table-simple-striped fs-xsmall">
-    <thead>
-        <tr>
-            <th class="cat-table-category first-child">Thread</th>
-            <th class="cat-table-discussions item-count">Replies</th>
-            <th class="cat-table-comments item-count">Views</th>
-            <th class="cat-table-latest last-child">Latest Post</th>
-        </tr>
-    </thead>
-    <tbody>
-        {#posts}
-        <tr>
-            <td class="cat-table-category first-child"><a href="posts"><a href="post">{name}</a></td>
-            <td class="cat-table-discussions item-count">{replies}</td>
-            <td class="cat-table-comments item-count">{views}</td>
-            <td class="cat-table-latest"><a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
-        </tr>
-        {/posts}
-    </tbody>
-</table>
+    <table class="cat-table table-simple table-simple-striped fs-xsmall">
+        <thead>
+            <tr>
+                <th class="cat-table-category first-child">Discussion</th>
+                <th class="cat-table-discussions item-count">Comments</th>
+                <th class="cat-table-comments item-count">Views</th>
+                <th class="cat-table-latest last-child">Latest Post</th>
+            </tr>
+        </thead>
+        <tbody>
+            {#posts}
+            <tr>
+                <td class="cat-table-category first-child"><a href="posts"><a href="post">{name}</a></td>
+                <td class="cat-table-discussions item-count">{replies}</td>
+                <td class="cat-table-comments item-count">{views}</td>
+                <td class="cat-table-latest"><a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
+            </tr>
+            {/posts}
+        </tbody>
+    </table>
+
+    <ul class="list-simple paginator">
+        <li><a href="#nextpage" rel="next" class="btn btn-secondary btn-xsmall disabled">← Previous</a></li>
+        <li class="page-numbers"><span class="btn btn-secondary btn-xsmall active">1</span></li>
+        <li class="page-numbers"><a href="#nextpage" rel="next" class="btn btn-secondary btn-xsmall">2</a></li>
+        <li class="page-numbers"><a href="#nextpage" rel="next" class="btn btn-secondary btn-xsmall">3</a></li>
+        <li class="page-numbers"><a href="#nextpage" rel="next" class="btn btn-secondary btn-xsmall">4</a></li>
+        <li><a href="#nextpage" rel="next" class="btn btn-secondary btn-xsmall">Next →</a></li>
+    </ul>
+</div>
+
+<div class="aside-col">
+    <h2>About this topic</h2>
+    <ul class="list-simple fs-xsmall">
+        <li>Started on {post.date} by {post.author}</li>
+        <li>22 participants</li>
+        <li>Latest reply by {post.latestReplyAuthor}</li>
+    </ul>
+    <h2>Popular Discussions</h2>
+    <ul class="list-simple fs-xsmall">
+        <li><a href="post">Corrosion on chain and gears</a> by <a href="http://strava.com/athletes/151849">Colnago65</a></li>
+        <li><a href="post">F(atigue)'ed Allez</a> by <a href="http://strava.com/athletes/151849">Volnix</a></li>
+        <li><a href="post">What's so special about bicycle grease?</a> by <a href="http://strava.com/athletes/151849">DeGreaser</a></li>
+    </ul>
+    <h2>Top Participants</h2>
+    <ul class="list-simple fs-xsmall">
+        <li><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/134807/20476/2/medium.jpg" height="30px" width="30px">Stephen Lambe</li>
+        <li><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/137115/1443274/2/medium.jpg" height="30px" width="30px">James Norton</li>
+        <li><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/7109/962421/2/medium.jpg" height="30px" width="30px">Chris Phipps</li>
+        <li><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/806483/177807/1/medium.jpg" height="30px" width="30px">Andrea Mota</li>
+
+    </ul>
+</div>
 {/content}

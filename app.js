@@ -10,6 +10,7 @@ var express       = require('express')
 var topics = require('./routes/topics');
 var posts = require('./routes/posts');
 var post = require('./routes/post');
+var newpost = require('./routes/newpost');
 
 
 // Create a new Express app
@@ -54,6 +55,7 @@ app.get('/', routes.index);
 app.get('/forums', topics.list);
 app.get('/topic', posts.list);
 app.get('/post', post.thread);
+app.get('/newpost', newpost.comment);
 
 // Create a server instance and start listening
 var server = http.createServer(app);
