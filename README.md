@@ -47,7 +47,7 @@ A per the brief, I tried to follow Strava’s existing design language and patte
 
 My first approach was to research the existing website, from the most popular destinations (e.g. Activity Feed, Training) to some of the more obscure (e.g. Clubs, Training Videos), and look for common grids, elements and design approaches.
 
-Upon identifying these, and along with the information provided in the brief and gathered from subsequent discussions, I created a library of common elements (buttons, anchors, menus, tab bars, etc). These would later help inform the design choices but also speed up development.
+Upon identifying these, and along with the information provided in the brief and gathered from subsequent discussions, I created a library of common elements (buttons, anchors, menus, tab bars, etc). These would later help inform the design choices and also speed up development.
 
 ### Implementation Philosophy
 
@@ -79,9 +79,9 @@ When possible high quality images were used to take into account higher density 
 
 Font definition is done at the `body` level and kept simple. Sizing was abstracted to helper classes to help keep things consistent and under control.
 
-Furthermore, some key elements were handpicked to apply antialising font-smoothing to. The key guideline being that font smoothing should mostly be left to the operating system and especially left untouched for large sections of text so not to compromise up readability.
+Furthermore, antialising font-smoothing was applied to some handpicked elements. The key guideline being that font smoothing should mostly be left to the operating system and especially left untouched for large sections where antialiasing could compromise readability.
 
-The same approach was taken with regards to `optimizeLegibility` for `text-rendering`.
+The same approach was taken with regard to `optimizeLegibility` for `text-rendering`.
 
 ##### Sizing with rem values
 
@@ -91,11 +91,10 @@ Using rem sizing would make it very easy to change the font-size on the page via
 
 #### Color
 
-Like fonts, color control was mostly kept under the control of the helper classes and common elements. Ideally, common text and background colors should also abstracted to helper classes (e.g. bg-primary, bg-emphasis, txt-simple, txt-emphasis) to help manage the rules and keep branding consistent.
+Like fonts, color control was mostly kept under the control of the helper classes and common elements. Ideally, common text and background colors should also be abstracted to helper classes (e.g. bg-primary, bg-emphasis, txt-simple, txt-emphasis) to help manage the rules and keep branding consistent.
 
 ## Final Thoughts
 
 Although great care was taken to complete this prototype it’s worth noting that it is still just a prototype and thus very far from production ready code. It was built focusing on good architecture and good practices but also greatly promoting the experience and experimentation.
 
-Beyond the challenge itself, this was a a great experience in that it allowed me to learn more about Strava, both the product but also its implementation, by looking at it from a perspective I hadn’t quite observed through before.
-
+Beyond the exercise itself, I enjoyed seeing Strava from a different perspective, and can better appreciate the challenges faced by a data-driven consumer product.
