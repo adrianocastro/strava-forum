@@ -51,7 +51,7 @@ My approach follows the Web Standards philosophy as pioneered by Jeffrey Zeldman
 
 This philosophy promotes clean and maintanable code that performs well. It’s forward thinking whilst, at the same time, as inclusive and accessible as possible without ever alienating audiences (that may not be on the latest technology). 
 
-In an effort to prompt discussion, some decisions were purposefully made to go against the existing approach in production (e.g. HTML5 semantic elements), whilst others were left intact (e.g. svg imagery).
+In an effort to prompt discussion, some decisions were purposefully made to go against the existing approach in production (e.g. HTML5 semantic elements), whilst others were left intact (e.g. svg images).
 
 Furthermore, as per the brief, the prototype I created follows a responsive design approach by offering a fluid layout that’s adaptive to varying screen sizes but also different devices.
 
