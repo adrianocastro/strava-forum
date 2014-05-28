@@ -38,6 +38,19 @@
 }
 /* Standard iPad portrait width. */
 @media (max-width: 768px) {
+    .content-col,
+    .aside-col {
+        float: none;
+        width: auto;
+    }
+
+    .content-col {
+        border: none;
+    }
+    .aside-col {
+        padding: 0;
+    }
+
     .cat-table .cat-table-latest {
         /* @TODO: consider a different approach so to still show this information */
         position: absolute;
@@ -136,18 +149,6 @@
         content: ' ' attr(data-legend);
     }
 
-    .content-col,
-    .aside-col {
-        float: none;
-        width: auto;
-    }
-
-    .content-col {
-        border: none;
-    }
-    .aside-col {
-        padding: 0;
-    }
 
     .topic-list h1 {
         float: none;
