@@ -4,7 +4,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 836px) {
     .logo {
         margin-bottom: 7px;
     }
@@ -15,12 +15,6 @@
     .navbar li {
         width: 16.6%;
         text-align: center;
-    }
-    .cat-table .cat-table-latest {
-        /* @TODO: consider a different approach so to still show this information */
-        position: absolute;
-        top: -999em;
-        left: -999em;
     }
     .more-info {
         clear: left;
@@ -34,5 +28,84 @@
     }
     .footer-promo {
         margin-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .cat-table .cat-table-latest {
+        /* @TODO: consider a different approach so to still show this information */
+        position: absolute;
+        top: -999em;
+        left: -999em;
+    }
+    .item-count {
+        width: auto;
+    }
+}
+@media (max-width: 452px) {
+    .content .wrapper {
+        margin: 0;
+    }
+    .hero-heading p {
+        width: auto;
+    }
+    .footer .language-picker {
+        float: none;
+        text-align: left;
+    }
+    .cat-filters li {
+        width: 33.3%;
+    }
+    .cat-filters li .btn {
+        width: 100%;
+    }
+    .cat-filters .view-all {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .cat-filters .view-all .btn {
+        width: 100%;
+    }
+    .navbar {
+        min-width: 100%;
+        clear: both;
+    }
+    .navbar li {
+        width: auto;
+        float: none;
+        display: none;
+    }
+    .navbar:hover li {
+        display: block;
+    }
+    .navbar li.selected {
+        display: block;
+    }
+    .navbar li.selected a {
+        background: #FC4C02;
+        color: #FFF;
+    }
+    .profile {
+        margin-right: 0;
+    }
+    .hero-heading {
+        margin: 17px 10px 10px 10px;
+    }
+    .cat-table-category {
+        text-align: center;
+    }
+    .cat-info {
+        margin-left: 0;
+    }
+    .cat-logo {
+        float: none;
+    }
+    .content-col {
+        /*width: 100%;*/
+    }
+    .aside-col {
+
+    }
+    .footer-promo {
+        width: 100%;
     }
 }
