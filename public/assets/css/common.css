@@ -42,17 +42,17 @@ body {
 /* BRANDING */
 ::selection {
     background-color: #FC4C02;
-    color: #fff;
+    color: #FFF;
     text-shadow: none;
 }
 ::-moz-selection {
     background-color: #FC4C02;
-    color: #fff;
+    color: #FFF;
     text-shadow: none;
 }
 
 a {
-    color: #007fb6;
+    color: #007FB6;
     cursor: pointer;
     /* Simplified transition rule for all new browsers (IE10+, Safari 6+, Chrome 26, Firefox 16)
        - see http://caniuse.com/css-transitions

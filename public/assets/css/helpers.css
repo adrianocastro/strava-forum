@@ -97,6 +97,7 @@ Used for:
     text-align: left;
 }
 .table-simple thead {
+    /* @TODO: rethink need for transparency */
     background-color: rgba(0,0,0,0.02);
 }
 .table-simple th {

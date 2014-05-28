@@ -73,7 +73,7 @@ Using rem sizing would make it very easy to change the font-size on the page via
 
 #### Color
 
-Like fonts, colors were also abstracted to helper classes to help manage the rules and keep branding consistent.
+Like fonts, color control was mostly kept under the control of the helper classes and common elements. Ideally, common text and background colors should also abstracted to helper classes (e.g. bg-primary, bg-emphasis, txt-simple, txt-emphasis) to help manage the rules and keep branding consistent.
 
 ## Final Thoughts
 
