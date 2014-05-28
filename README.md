@@ -4,7 +4,15 @@
 
 A working prototype of a standard forum as imagined in the context of Strava. Fully responsive and interactable, but with canned data.
 
-## Installation
+## Testing
+
+### Live
+
+You can test the prototype live at http://strava-forum-castro.herokuapp.com.
+
+### Locally
+
+Alternatively you can test locally following these instructions:
 
 1. `npm clone git@github.com:adrianocastro/strava-forum.git`
 1. `cd strava-forum`
@@ -53,7 +61,17 @@ This philosophy promotes clean and maintanable code that performs well. It’s f
 
 In an effort to prompt discussion, some decisions were purposefully made to go against the existing approach in production (e.g. HTML5 semantic elements), whilst others were left intact (e.g. svg images).
 
-Furthermore, as per the brief, the prototype I created follows a responsive design approach by offering a fluid layout that’s adaptive to varying screen sizes but also different devices.
+#### Responsive Design
+
+The prototype follows a responsive design approach by offering a fluid layout that’s adaptive to varying screen sizes but also different devices.
+
+In terms of the fluidity of the design, given the brief, my attention was mostly centered on the body of the document but some effort was also put in place to offer a solid responsive solution to the header and footer.
+
+That said, as it’s currently implemented, the navbar menu barely works on mobile. A better approach would be to implement a hamburger style menu (≡) or a fixed (top or bottom) menu similar to native apps.
+
+It’s a common practice on mobile to disable zooming in an effort to keep the look and feel tight like in an app, but I find this approach interferes with accessibility so I chose to allow the user to zoom freely.
+
+When possible high quality images were used to take into account higher density screens. A more comprehensive approach would have seen two different sets of images being served for retina and non-retina displays so to improve performance.
 
 ### Branding
 
