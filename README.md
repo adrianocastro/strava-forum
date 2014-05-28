@@ -18,7 +18,7 @@ Alternatively you can test locally following these instructions:
 1. `cd strava-forum`
 1. `npm install`
 1. `node app.js`
-1. open `http://localhost:3000` on your browser
+1. open [http://localhost:3000](http://localhost:3000) on your browser
 
 ## Brief
 
