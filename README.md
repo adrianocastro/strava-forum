@@ -77,7 +77,7 @@ Like fonts, color control was mostly kept under the control of the helper classe
 
 ## Final Thoughts
 
-Although great care was taken to complete this prototype it’s worth noting that it is still just a prototype – very far from production ready code. It was built focusing on good architecture and good practices but also greatly promoting the experience and experimentation.
+Although great care was taken to complete this prototype it’s worth noting that it is still just a prototype and thus very far from production ready code. It was built focusing on good architecture and good practices but also greatly promoting the experience and experimentation.
 
-Beyond the challenge itself, this was a a great experience in that it allowed me to learn more about Strava by looking at it from a perspective I hadn’t quite observed through before.
+Beyond the challenge itself, this was a a great experience in that it allowed me to learn more about Strava, both the product but also its implementation, by looking at it from a perspective I hadn’t quite observed through before.
 
