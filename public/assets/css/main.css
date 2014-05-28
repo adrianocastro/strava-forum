@@ -156,10 +156,8 @@
     width: 49px;
     height: 48px;
     margin: 0 auto;
-    background: url(../img/sprite_navbar_icons.png) no-repeat center top;
-}
-.heading-icon.forum {
-    background-position: -331px 0px;
+    background: url(../img/forums_icon.png) no-repeat 0 0;
+    background-size: cover;
 }
 
 .ui-number {
