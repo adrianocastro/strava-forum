@@ -4,7 +4,10 @@
             "name" : "Challenges",
             "subTopics": [
                 {
-                    "name": "Ride Challenge: Gran Fondo 5",
+                    "name" : "Gran Fondo 5",
+                    "type" : "Ride",
+                    "image" : "/assets/img/challenge_grand_fondo_5.png",
+                    "tagline" : "Go on a 130km cycling adventure.",
                     "discussions" : 22,
                     "comments" : 301,
                     "latestPost" : {
@@ -14,7 +17,10 @@
                     }
                 },
                 {
-                    "name": "Run Challenge: Suunto Sisu Challenge",
+                    "name": "Suunto Sisu Challenge",
+                    "type" : "Run",
+                    "image": "/assets/img/challenge_suunto_sisu.png",
+                    "tagline" : "Run 65 kilometers (40.4mi) in 16 days.",
                     "discussions" : 18,
                     "comments" : 217,
                     "latestPost" : {
@@ -24,7 +30,10 @@
                     }
                 },
                 {
-                    "name": "Run Challenge: May MTS",
+                    "name": "May MTS",
+                    "type" : "Run",
+                    "image": "/assets/img/challenge_may_mts_run.png",
+                    "tagline" : "How many kilometers can you run this May?",
                     "discussions" : 102,
                     "comments" : 542,
                     "latestPost" : {
@@ -34,7 +43,10 @@
                     }
                 },
                 {
-                    "name": "Ride Challenge: May MTS",
+                    "name": "May MTS",
+                    "type" : "Ride",
+                    "image": "/assets/img/challenge_may_mts_ride.png",
+                    "tagline" : "How many kilometers can you ride this May?",
                     "discussions" : 287,
                     "comments" : 1201,
                     "latestPost" : {
@@ -44,7 +56,10 @@
                     }
                 },
                 {
-                    "name": "Run Challenge: Strava Races 10k",
+                    "name": "Strava Races 10k",
+                    "type" : "Run",
+                    "image": "/assets/img/challenges_strava_races_10k.png",
+                    "tagline" : "Run a 10k this May.",
                     "discussions" : 401,
                     "comments" : 985,
                     "latestPost" : {
@@ -54,7 +69,10 @@
                     }
                 },
                 {
-                    "name": "Run Challenge: Strava Races Half Marathon",
+                    "name": "Strava Races Half Marathon",
+                    "type" : "Run",
+                    "image": "/assets/img/challenges_strava_races_half_marathon.png",
+                    "tagline" : "Run a half marathon this May.",
                     "discussions" : 1012,
                     "comments" : 4501,
                     "latestPost" : {

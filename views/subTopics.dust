@@ -10,7 +10,20 @@
     <tbody>
         {#subTopics}
         <tr>
-            <td class="cat-table-category first-child"><a href="topic">{name}</a></td>
+            <td class="cat-table-category first-child">
+                {#image}
+                    <img src="{image}" alt="" class="cat-logo">
+                {/image}
+                {#type}
+                    <div class="cat-info">
+                        <span class="cat-type fs-xxsmall">{type}</span>
+                        <a href="/topic" class="fs-medium">{name}<u class="stretch"></u></a>
+                        <span class="cat-tagline fs-xsmall">{tagline}</span>
+                    </div>
+                {:else}
+                    <a href="/topic" class="fs-medium">{name}<u class="stretch"></u></a>
+                {/type}
+            </td>
             <td class="cat-table-discussions item-count">{discussions}</td>
             <td class="cat-table-comments item-count">{comments}</td>
             <td class="cat-table-latest last-child"><a href="post">{latestPost.title}</a> by <a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
