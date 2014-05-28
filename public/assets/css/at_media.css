@@ -1,9 +1,15 @@
+/* Add some left and right padding to keep the design consistent
+   with the wider experience.
+ */
 @media (max-width: 1163px) {
     .wrapper {
         margin: 0 15px;
     }
 }
 
+/* Drop the navbar menu and the footer columns to their own line to
+   make up for the lack of horizontal space.
+ */
 @media (max-width: 836px) {
     .logo {
         margin-bottom: 7px;
@@ -30,6 +36,7 @@
         margin-right: 20px;
     }
 }
+/* Standard iPad portrait width. */
 @media (max-width: 768px) {
     .cat-table .cat-table-latest {
         /* @TODO: consider a different approach so to still show this information */
@@ -41,7 +48,21 @@
         width: auto;
     }
 }
-@media (max-width: 452px) {
+
+/* Render the footer as 2 instead of 4 columns once we hit the 500px mark.
+   This makes it easier to read and interact it.
+ */
+@media (max-width: 500px) {
+    .more-info .footer-cols {
+        width: 50%;
+    }
+    .force-drop {
+        clear: left;
+    }
+}
+
+/* Standard iPhone 5 landscape width. */
+@media (max-width: 568px) {
 
     .hiddenSmallScreen {
         position: absolute!important;
@@ -172,12 +193,7 @@
         margin-left: 0;
     }
 
-    .more-info .footer-cols {
-        width: 50%;
-    }
-    .force-drop {
-        clear: left;
-    }
+
     .footer .language-picker {
         float: none;
         text-align: left;
