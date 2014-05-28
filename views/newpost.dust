@@ -23,18 +23,7 @@
         </form>
     </div>
 </div>
-<div class="aside-col">
-    <h2>About this thread</h2>
-    <ul class="list-simple fs-xsmall">
-        <li>Started on {post.date} by {post.author}</li>
-        <li>22 participants</li>
-        <li>Latest reply by {post.latestReplyAuthor}</li>
-    </ul>
-    <h2>Related threads</h2>
-    <ul class="list-simple fs-xsmall">
-        <li>Drivetrain is a mess</li>
-        <li>Best dry lube for dusty/sandy conditions</li>
-        <li>How many miles before you replace your chain?</li>
-    </ul>
-</div>
+
+{>topicAside/}
+
 {/content}

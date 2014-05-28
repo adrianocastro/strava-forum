@@ -2,8 +2,8 @@
     <thead>
         <tr>
             <th class="cat-table-category">Topics</th>
-            <th class="cat-table-discussions item-count">Discussions</th>
-            <th class="cat-table-comments item-count">Comments</th>
+            <th class="cat-table-discussions ui-number">Discussions</th>
+            <th class="cat-table-comments ui-number">Comments</th>
             <th class="cat-table-latest">Latest Post</th>
         </tr>
     </thead>
@@ -24,8 +24,8 @@
                     <a href="/topic" class="fs-medium">{name}<u class="stretch"></u></a>
                 {/type}
             </td>
-            <td class="cat-table-discussions item-count" data-legend="discussions">{discussions}</td>
-            <td class="cat-table-comments item-count" data-legend="comments">{comments}</td>
+            <td class="cat-table-discussions ui-number" data-legend="discussions">{discussions}</td>
+            <td class="cat-table-comments ui-number" data-legend="comments">{comments}</td>
             <td class="cat-table-latest"><a href="post">{latestPost.title}</a> by <a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>
         </tr>
         {/subTopics}

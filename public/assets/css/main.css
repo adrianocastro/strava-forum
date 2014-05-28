@@ -162,7 +162,7 @@
     background-position: -331px 0px;
 }
 
-.item-count {
+.ui-number {
     width: 100px;
     text-align: center;
 }
@@ -184,12 +184,29 @@
 }
 .aside-col {
     width: 30%;
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
     *margin-left: -1px;
+    outline: 1px solid #E5E5E5;
 }
 .aside-col h2 {
+    margin: 25px 0 10px 0;
+    padding: 0;
     text-transform: capitalize;
 }
+
+.aside-col .list-simple li {
+    margin: 3px 0;
+}
+
+.userlist img {
+    float: left;
+    margin-right: 5px;
+}
+
+.userlist .location {
+    display: block;
+}
+
 
 .topic-list h1 {
     float: left;
@@ -203,9 +220,6 @@
     margin: 10px 0;
 }
 
-.aside-col h2 {
-    margin: 0;
-}
 .thread-title h1 {
     margin: 0;
     clear: right;

@@ -49,6 +49,7 @@
         <button type="submit" class="comment-submit btn btn-primary btn-xsmall">Submit</button>
     </form>
 </div>
+
 <div class="aside-col">
     <h2>About this thread</h2>
     <ul class="list-simple fs-xsmall">
@@ -58,9 +59,16 @@
     </ul>
     <h2>Related threads</h2>
     <ul class="list-simple fs-xsmall">
-        <li>Drivetrain is a mess</li>
-        <li>Best dry lube for dusty/sandy conditions</li>
-        <li>How many miles before you replace your chain?</li>
+        <li><a href="post">Corrosion on chain and gears</a> by <a href="http://strava.com/athletes/151849">Colnago65</a></li>
+        <li><a href="post">F(atigue)'ed Allez</a> by <a href="http://strava.com/athletes/151849">Volnix</a></li>
+        <li><a href="post">What's so special about bicycle grease?</a> by <a href="http://strava.com/athletes/151849">DeGreaser</a></li>
+    </ul>
+    <h2>Top Participants</h2>
+    <ul class="list-simple fs-xsmall userlist">
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/134807/20476/2/medium.jpg" height="32" width="32">Stephen Lambe <span class="txt-secondary fs-xxsmall location">New York</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/137115/1443274/2/medium.jpg" height="32" width="32">James Norton <span class="txt-secondary fs-xxsmall location">Somewhere</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/7109/962421/2/medium.jpg" height="32" width="32">Chris Phipps <span class="txt-secondary fs-xxsmall location">San Francisco</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/806483/177807/1/medium.jpg" height="32" width="32">Andrea Mota <span class="txt-secondary fs-xxsmall location">San Francisco</span></a></li>
     </ul>
 </div>
 {/content}

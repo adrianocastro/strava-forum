@@ -182,6 +182,9 @@ input:focus {
 .txt-secondary {
     color: #999;
 }
+.txt-secondary:hover {
+    text-decoration: none;
+}
 
 .btn {
     color: #333;

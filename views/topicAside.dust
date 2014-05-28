@@ -1,0 +1,19 @@
+<div class="aside-col">
+    <h2>About this topic</h2>
+    <p>A forum for discussing all things related to cycling gear and apparel</p>
+    <p class="txt-secondary fs-xsmall">913 discussion and 7104 comments</p>
+    <p class="fs-xsmall">Latest comment by <a href="http://strava.com/athletes/151849">Colnago65</a> on <a href="http://localhost:3000/post">Wed, 5/7/2014</a></p>
+    <h2>Popular Discussions</h2>
+    <ul class="list-simple fs-xsmall">
+        <li><a href="post">Corrosion on chain and gears</a> by <a href="http://strava.com/athletes/151849">Colnago65</a></li>
+        <li><a href="post">F(atigue)'ed Allez</a> by <a href="http://strava.com/athletes/151849">Volnix</a></li>
+        <li><a href="post">What's so special about bicycle grease?</a> by <a href="http://strava.com/athletes/151849">DeGreaser</a></li>
+    </ul>
+    <h2>Top Participants</h2>
+    <ul class="list-simple fs-xsmall userlist">
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/134807/20476/2/medium.jpg" height="32" width="32">Stephen Lambe <span class="txt-secondary fs-xxsmall location">New York</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/137115/1443274/2/medium.jpg" height="32" width="32">James Norton <span class="txt-secondary fs-xxsmall location">Somewhere</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/7109/962421/2/medium.jpg" height="32" width="32">Chris Phipps <span class="txt-secondary fs-xxsmall location">San Francisco</span></a></li>
+        <li class="bfc"><a href="http://strava.com/athletes/151849"><img src="http://dgalywyr863hv.cloudfront.net/pictures/athletes/806483/177807/1/medium.jpg" height="32" width="32">Andrea Mota <span class="txt-secondary fs-xxsmall location">San Francisco</span></a></li>
+    </ul>
+</div>
