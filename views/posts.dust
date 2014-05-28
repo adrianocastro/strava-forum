@@ -8,16 +8,16 @@
     <table class="cat-table table-simple table-simple-striped fs-xsmall">
         <thead>
             <tr>
-                <th class="cat-table-category first-child">Discussion</th>
+                <th class="cat-table-category">Discussion</th>
                 <th class="cat-table-discussions item-count">Comments</th>
                 <th class="cat-table-comments item-count">Views</th>
-                <th class="cat-table-latest last-child">Latest Post</th>
+                <th class="cat-table-latest">Latest Post</th>
             </tr>
         </thead>
         <tbody>
             {#posts}
             <tr>
-                <td class="cat-table-category first-child"><a href="posts"><a href="post">{name}</a></td>
+                <td class="cat-table-category"><a href="posts"><a href="post">{name}</a></td>
                 <td class="cat-table-discussions item-count">{replies}</td>
                 <td class="cat-table-comments item-count">{views}</td>
                 <td class="cat-table-latest"><a href="#TODO">{latestPost.author}</a> on {latestPost.date}</td>

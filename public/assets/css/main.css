@@ -226,7 +226,7 @@
     margin: 0 20px;
 }
 
-.post:first-child {
+.thread-list li.post:first-child {
     border-top: 1px solid #F5F5F5;
 }
 .post {

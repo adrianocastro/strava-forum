@@ -106,10 +106,12 @@ Used for:
     padding: 8px 10px;
     font-weight: normal;
 }
-.table-simple .first-child {
+.table-simple th:first-child,
+.table-simple td:first-child {
     padding-left: 20px;
 }
-.table-simple .last-child {
+.table-simple th:last-child,
+.table-simple td:last-child {
     padding-right: 20px;
     border-right: none;
 }
