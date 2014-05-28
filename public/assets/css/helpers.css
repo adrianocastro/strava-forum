@@ -21,6 +21,12 @@ Used for:
     overflow: hidden;
 }
 
+.text-hidden {
+    text-indent: -999em;
+    overflow: hidden;
+    zoom: 1;
+}
+
 /* A shim used to take up the full width and height of its parent for bigger interaction area */
 .stretch {
     position: absolute;
@@ -28,12 +34,6 @@ Used for:
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.text-hidden {
-    text-indent: -999em;
-    overflow: hidden;
-    zoom: 1;
 }
 
 .list-simple {
